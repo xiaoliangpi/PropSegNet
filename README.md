@@ -10,12 +10,13 @@ This repo provides scripts for training and validation script.
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/your-username/PropSegNet.git
+   git clone https://github.com/xiaoliangpi/PropSegNet.git
    cd PropSegNe
 
 ## 📥 Pre-trained Checkpoints
 
-You can download our trained PropSegNet models from Google Drive: https://drive.google.com/drive/folders/1SKg3PC9lNUy2enrjbo_RyFPeGX9dfw89?usp=sharing
+You can download our trained PropSegNet models from Google Drive:
+[checkpoint](https://drive.google.com/drive/folders/1SKg3PC9lNUy2enrjbo_RyFPeGX9dfw89?usp=sharing)
 
 ## ✅ Validation
 The new validate.py script loads a saved checkpoint, runs inference on the ABD test set, computes both raw and normalized confusion matrices, and saves:
