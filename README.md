@@ -21,8 +21,6 @@ You can download our trained PropSegNet models from Google Drive:
 ## ✅ Validation
 The new validate.py script loads a saved checkpoint, runs inference on the ABD test set, computes both raw and normalized confusion matrices, and saves:
 
-- results/y_true.npy, results/y_pred.npy
-
 - results/cm_fold{fold}.png, results/cm_fold{fold}.npy
 
 ### Usage
@@ -31,15 +29,15 @@ python validate.py \
   --csv "multi_gt_prob.csv" \
   --output-dir results
 
-Arguments
+**Arguments**
 
---checkpoint Path to .pt model file.
+    --checkpoint Path to .pt model file.
 
---csv Ground-truth probabilities CSV.
+    --csv Ground-truth probabilities CSV.
 
---output-dir Directory to write .npy arrays and the PNG plot.
+    --output-dir Directory to write .npy arrays and the PNG plot.
 
 ### 📈 Results
-Open results/confusion_matrix.png to visually inspect per-class performance.
+Open results/cm_fold{fold}.png to visually inspect per-class performance.
 Load the .npy files for custom analysis in NumPy or pandas.
 
